@@ -53,7 +53,7 @@ function initPage() {
   if (!saveData) {
     return;
   }
-  Object.entries(parseData).forEach(([name, value]) => {
+  Object.entries(saveData).forEach(([name, value]) => {
     feedbackEl.elements[name].value = value;
   });
 }
